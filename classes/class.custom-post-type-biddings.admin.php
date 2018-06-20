@@ -3,8 +3,7 @@
  * Custom Post Type Biddings Admin
  *
  * @package Custom Post Type Biddings
- * @since 1.0
- * @author Ralf Hortt <me@horttcore.de>
+ * @author Ralf Hortt
  */
 class Custom_Post_Type_Biddings_Admin
 {
@@ -15,8 +14,8 @@ class Custom_Post_Type_Biddings_Admin
 	 * Plugin constructor
 	 *
 	 * @access public
-	 * @since 1.0
-	 * @author Ralf Hortt <me@horttcore.de>
+	 * @since 2.0
+	 * @author Ralf Hortt
 	 **/
 	public function __construct()
 	{
@@ -32,8 +31,8 @@ class Custom_Post_Type_Biddings_Admin
 	 * @access public
 	 * @param array $messages Messages
 	 * @return array Messages
-	 * @since 1.0
-	 * @author Ralf Hortt <me@horttcore.de>
+	 * @since 2.0
+	 * @author Ralf Hortt
 	 **/
 	public function post_updated_messages( $messages )
 	{
@@ -62,7 +61,7 @@ class Custom_Post_Type_Biddings_Admin
 
 		$permalink = get_permalink( $post->ID );
 
-		$view_link = sprintf( ' <a href="%s">%s</a>', esc_url( $permalink ), __( 'View bidding', 'custom-post-type-biddings' ) );
+		$view_link = sprintf( ' <a href="%s">%s</a>', esc_url( $permalink ), __( 'View Bidding', 'custom-post-type-biddings' ) );
 		$messages[$post_type][1] .= $view_link;
 		$messages[$post_type][6] .= $view_link;
 		$messages[$post_type][9] .= $view_link;
@@ -78,6 +77,6 @@ class Custom_Post_Type_Biddings_Admin
 
 
 
-} // END class Custom_Post_Type_Biddings_Admin
+} // END final class Custom_Post_Type_Biddings_Admin
 
 new Custom_Post_Type_Biddings_Admin;

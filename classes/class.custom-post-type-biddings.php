@@ -86,7 +86,7 @@ class Custom_Post_Type_Biddings
 			'show_in_menu' => TRUE,
 			'query_var' => TRUE,
 			'rewrite' => array(
-				'slug' => _x( 'bidding', 'Post Type Slug', 'custom-post-type-biddings' ),
+				'slug' => _x( 'biddings', 'Post Type Slug', 'custom-post-type-biddings' ),
 				'with_front' => FALSE,
 			),
 			'capability_type' => 'post',
@@ -134,7 +134,7 @@ class Custom_Post_Type_Biddings
                 'items_list_navigation' => __( 'Bidding Categories list navigation', 'custom-post-type-biddings' ),
                 'items_list' => __( 'Bidding Categories list', 'custom-post-type-biddings' ),
             ),
-            'show_ui' => TRUE,	
+            'show_ui' => TRUE,
             'query_var' => TRUE,
             'rewrite' => array(
                 'slug' => _x( 'bidding-category', 'Bidding Category Slug', 'custom-post-type-biddings' ),
