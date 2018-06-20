@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Custom Post Type Biddings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-20 06:44+0000\n"
-"PO-Revision-Date: 2018-06-20 06:51+0000\n"
+"POT-Creation-Date: 2018-06-20 12:33+0000\n"
+"PO-Revision-Date: 2018-06-20 13:39+0000\n"
 "Last-Translator: fbo_master <wordpress@fbo.de>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -13,168 +13,251 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: classes/class.custom-post-type-biddings.php:62
-msgid "Add New Bidding"
-msgstr "Neue Ausschreibung erstellen"
+#: classes/class.custom-post-type-biddings.php:57
+msgctxt "post type general name"
+msgid "Biddings"
+msgstr "Ausschreibungen"
 
-#: classes/class.custom-post-type-biddings.php:71
-msgid "All Biddings"
-msgstr "Alle Ausschreibungen"
+#: classes/class.custom-post-type-biddings.php:58
+msgctxt "post type singular name"
+msgid "Bidding"
+msgstr "Ausschreibung"
 
-#: classes/class.custom-post-type-biddings.php:61
+#: classes/class.custom-post-type-biddings.php:59
 msgctxt "Bidding"
 msgid "Add New"
 msgstr "Erstellen"
 
-#: classes/class.custom-post-type-biddings.php:72
+#: classes/class.custom-post-type-biddings.php:60
+msgid "Add New Bidding"
+msgstr "Neue Ausschreibung erstellen"
+
+#: classes/class.custom-post-type-biddings.php:61
+msgid "Edit Bidding"
+msgstr "Ausschreibung bearbeiten"
+
+#: classes/class.custom-post-type-biddings.php:62
+msgid "New Bidding"
+msgstr "Neue Ausschreibung"
+
+#: classes/class.custom-post-type-biddings.php:63
+msgid "View Bidding"
+msgstr "Ausschreibung ansehen"
+
+#: classes/class.custom-post-type-biddings.php:64
+msgid "View Biddings"
+msgstr "Ausschreibungen ansehen"
+
+#: classes/class.custom-post-type-biddings.php:65
+msgid "Search Biddings"
+msgstr "Ausschreibungen durchsuchen"
+
+#: classes/class.custom-post-type-biddings.php:66
+msgid "No Biddings found"
+msgstr "Keine Ausschreibungen gefunden."
+
+#: classes/class.custom-post-type-biddings.php:67
+msgid "No Biddings found in Trash"
+msgstr "Keine Ausschreibungen im Papierkorb gefunden."
+
+#: classes/class.custom-post-type-biddings.php:68
+msgid "Parent Bidding:"
+msgstr "Übergeordnete Ausschreibung:"
+
+#: classes/class.custom-post-type-biddings.php:69
+msgid "All Biddings"
+msgstr "Alle Ausschreibungen"
+
+#: classes/class.custom-post-type-biddings.php:70
 msgid "Bidding Archives"
 msgstr "Ausschreibungs-Archive"
 
-#: classes/class.custom-post-type-biddings.php:73
+#: classes/class.custom-post-type-biddings.php:71
 msgid "Bidding Attributes"
 msgstr "Attribute"
 
-#: classes/class.custom-post-type-biddings.admin.php:56
-msgid "Bidding draft updated."
-msgstr "Ausschreibungsentwurf aktualisiert."
+#: classes/class.custom-post-type-biddings.php:72
+msgid "Insert into bidding"
+msgstr "In Ausschreibung einfügen"
 
-#: classes/class.custom-post-type-biddings.php:81
+#: classes/class.custom-post-type-biddings.php:73
+msgid "Uploaded to this bidding"
+msgstr "Zu dieser Ausschreibung hochgeladen"
+
+#: classes/class.custom-post-type-biddings.php:74
+msgid "Featured Image"
+msgstr "Ausschreibungsbild"
+
+#: classes/class.custom-post-type-biddings.php:75
+msgid "Set featured image"
+msgstr "Ausschreibungsbild"
+
+#: classes/class.custom-post-type-biddings.php:76
+msgid "Remove featured image"
+msgstr "Ausschreibungsbild entfernen"
+
+#: classes/class.custom-post-type-biddings.php:77
+msgid "Use as featured image"
+msgstr "Als Ausschreibungsbild nutzen"
+
+#: classes/class.custom-post-type-biddings.php:78
+msgid "Filter bidding list"
+msgstr "Ausschreibungsliste filtern"
+
+#: classes/class.custom-post-type-biddings.php:79
 msgid "Bidding list navigation"
 msgstr "Navigation der Ausschreibungsliste"
 
-#: classes/class.custom-post-type-biddings.admin.php:52
-msgid "Bidding published."
-msgstr "Ausschreibung veröffentlicht."
+#: classes/class.custom-post-type-biddings.php:80
+msgid "Biddings list"
+msgstr "Ausschreibungsliste"
+
+#: classes/class.custom-post-type-biddings.php:81
+msgid "Biddings"
+msgstr "Ausschreibungen"
+
+#: classes/class.custom-post-type-biddings.php:89
+msgctxt "Post Type Slug"
+msgid "bidding"
+msgstr "ausschreibung"
+
+#: classes/class.custom-post-type-biddings.php:117
+msgctxt "taxonomy general name"
+msgid "Bidding Categories"
+msgstr "Ausschreibungs-Kategorien"
+
+#: classes/class.custom-post-type-biddings.php:118
+msgctxt "taxonomy singular name"
+msgid "Bidding Category"
+msgstr "Ausschreibungs-Kategorie"
+
+#: classes/class.custom-post-type-biddings.php:119
+msgid "Search Bidding Categories"
+msgstr "Ausschreibungs-Kategorien suchen"
+
+#: classes/class.custom-post-type-biddings.php:120
+msgid "Popular Bidding Categories"
+msgstr "Popular Bidding Categories"
+
+#: classes/class.custom-post-type-biddings.php:121
+msgid "All Bidding Categories"
+msgstr "Alle Ausschreibungs-Kategorien"
+
+#: classes/class.custom-post-type-biddings.php:122
+msgid "Parent Bidding Category"
+msgstr "Übergeordnete Ausschreibungs-Kategorie"
+
+#: classes/class.custom-post-type-biddings.php:123
+msgid "Parent Bidding Category:"
+msgstr "Übergeordnete Ausschreibungs-Kategorie:"
+
+#: classes/class.custom-post-type-biddings.php:124
+msgid "Edit Bidding Category"
+msgstr "Ausschreibungs-Kategorie bearbeiten"
+
+#: classes/class.custom-post-type-biddings.php:125
+msgid "View Bidding Category"
+msgstr "Ausschreibungs-Kategorie bearbeiten"
+
+#: classes/class.custom-post-type-biddings.php:126
+msgid "Update Bidding Category"
+msgstr "Ausschreibungs-Kategorie aktualisieren."
+
+#: classes/class.custom-post-type-biddings.php:127
+msgid "Add New Bidding Category"
+msgstr "Neue Ausschreibungs-Kategorie erstellen"
+
+#: classes/class.custom-post-type-biddings.php:128
+msgid "New Bidding Category Name"
+msgstr "Ausschreibungs-Kategoriename"
+
+#: classes/class.custom-post-type-biddings.php:129
+msgid "Separate bidding categories with commas"
+msgstr "Ausschreibungs-Kategorien durch Kommas trennen."
+
+#: classes/class.custom-post-type-biddings.php:130
+msgid "Add or remove bidding categories"
+msgstr "Ausschreibungs-Kategorien hinzufügen oder entfernen"
+
+#: classes/class.custom-post-type-biddings.php:131
+msgid "Choose from the most used bidding categories"
+msgstr "Wähle aus den meistgenutzten Ausschreibungs-Kategorien"
+
+#: classes/class.custom-post-type-biddings.php:132
+msgid "No bidding categories found"
+msgstr "Keine Ausschreibungs-Kategorien gefunden."
+
+#: classes/class.custom-post-type-biddings.php:133
+msgid "No bidding categories"
+msgstr "Keine Ausschreibungs-Kategorien"
+
+#: classes/class.custom-post-type-biddings.php:134
+msgid "Bidding Categories list navigation"
+msgstr "Navigation der Ausschreibungs-Kategorienliste"
+
+#: classes/class.custom-post-type-biddings.php:135
+msgid "Bidding Categories list"
+msgstr "Navigation der Ausschreibungs-Kategorienliste"
+
+#: classes/class.custom-post-type-biddings.php:140
+msgctxt "Bidding Category Slug"
+msgid "bidding-category"
+msgstr "ausschreibungs-kategorie"
+
+#: classes/class.custom-post-type-biddings.admin.php:47
+#: classes/class.custom-post-type-biddings.admin.php:50
+msgid "Bidding updated."
+msgstr "Ausschreibung aktualisiert."
 
 #. %s: date and time of the revision
-#: classes/class.custom-post-type-biddings.admin.php:51
+#: classes/class.custom-post-type-biddings.admin.php:52
 #, php-format
 msgid "Bidding restored to revision from %s"
 msgstr "Ausschreibung aus Revision vom %s wiederhergestellt."
 
 #: classes/class.custom-post-type-biddings.admin.php:53
+msgid "Bidding published."
+msgstr "Ausschreibung veröffentlicht."
+
+#: classes/class.custom-post-type-biddings.admin.php:54
 msgid "Bidding saved."
 msgstr "Ausschreibung gespeichert."
 
 #: classes/class.custom-post-type-biddings.admin.php:55
+msgid "Bidding submitted."
+msgstr "Ausschreibung abgeschickt."
+
+#: classes/class.custom-post-type-biddings.admin.php:56
 #, php-format
 msgid "Bidding scheduled for: <strong>%1$s</strong>."
 msgstr "Ausschreibung geplant für %s."
 
-#: classes/class.custom-post-type-biddings.admin.php:54
-msgid "Bidding submitted."
-msgstr "Ausschreibung abgeschickt."
+#: classes/class.custom-post-type-biddings.admin.php:56
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
 
-#: classes/class.custom-post-type-biddings.admin.php:46
-#: classes/class.custom-post-type-biddings.admin.php:49
-msgid "Bidding updated."
-msgstr "Ausschreibung aktualisiert."
+#: classes/class.custom-post-type-biddings.admin.php:57
+msgid "Bidding draft updated."
+msgstr "Ausschreibungsentwurf aktualisiert."
 
-#: classes/class.custom-post-type-biddings.php:83
-msgid "Biddings"
-msgstr "Ausschreibungen"
+#: classes/class.custom-post-type-biddings.admin.php:65
+msgid "View bidding"
+msgstr "Ausschreibung ansehen"
 
-#: classes/class.custom-post-type-biddings.php:82
-msgid "Biddings list"
-msgstr "Ausschreibungsliste"
+#: classes/class.custom-post-type-biddings.admin.php:71
+msgid "Preview bidding"
+msgstr "Ausschreibungs-Vorschau"
 
 #. Name of the plugin
 #. Description of the plugin
 msgid "Custom Post Type Biddings"
 msgstr "Custom Post Type Ausschreibungen"
 
-#: classes/class.custom-post-type-biddings.php:63
-msgid "Edit Bidding"
-msgstr "Ausschreibung bearbeiten"
-
-#: classes/class.custom-post-type-biddings.php:76
-msgid "Featured Image"
-msgstr "Ausschreibungsbild"
-
-#: classes/class.custom-post-type-biddings.php:80
-msgid "Filter bidding list"
-msgstr "Ausschreibungsliste filtern"
-
 #. URI of the plugin
 #. Author URI of the plugin
 msgid "https://horttcore.de"
 msgstr "https://horttcore.de"
 
-#: classes/class.custom-post-type-biddings.php:74
-msgid "Insert into bidding"
-msgstr "In Ausschreibung einfügen"
-
-#: classes/class.custom-post-type-biddings.admin.php:55
-msgid "M j, Y @ G:i"
-msgstr "M j, Y @ G:i"
-
-#: classes/class.custom-post-type-biddings.php:64
-msgid "New Bidding"
-msgstr "Neue Ausschreibung"
-
-#: classes/class.custom-post-type-biddings.php:68
-msgid "No Biddings found"
-msgstr "Keine Ausschreibungen gefunden."
-
-#: classes/class.custom-post-type-biddings.php:69
-msgid "No Biddings found in Trash"
-msgstr "Keine Ausschreibungen im Papierkorb gefunden."
-
-#: classes/class.custom-post-type-biddings.php:70
-msgid "Parent Bidding:"
-msgstr "Übergeordnete Ausschreibung:"
-
-#: classes/class.custom-post-type-biddings.php:59
-msgctxt "post type general name"
-msgid "Biddings"
-msgstr "Ausschreibungen"
-
-#: classes/class.custom-post-type-biddings.php:60
-msgctxt "post type singular name"
-msgid "Bidding"
-msgstr "Ausschreibung"
-
-#: classes/class.custom-post-type-biddings.php:91
-msgctxt "Post Type Slug"
-msgid "bidding"
-msgstr "ausschreibung"
-
-#: classes/class.custom-post-type-biddings.admin.php:70
-msgid "Preview bidding"
-msgstr "Ausschreibungs-Vorschau"
-
 #. Author of the plugin
 msgid "Ralf Hortt"
 msgstr "Ralf Hortt"
-
-#: classes/class.custom-post-type-biddings.php:78
-msgid "Remove featured image"
-msgstr "Ausschreibungsbild entfernen"
-
-#: classes/class.custom-post-type-biddings.php:67
-msgid "Search Biddings"
-msgstr "Ausschreibungen durchsuchen"
-
-#: classes/class.custom-post-type-biddings.php:77
-msgid "Set featured image"
-msgstr "Ausschreibungsbild"
-
-#: classes/class.custom-post-type-biddings.php:75
-msgid "Uploaded to this bidding"
-msgstr "Zu dieser Ausschreibung hochgeladen"
-
-#: classes/class.custom-post-type-biddings.php:79
-msgid "Use as featured image"
-msgstr "Als Ausschreibungsbild nutzen"
-
-#: classes/class.custom-post-type-biddings.php:65
-msgid "View Bidding"
-msgstr "Ausschreibung ansehen"
-
-#: classes/class.custom-post-type-biddings.admin.php:64
-msgid "View bidding"
-msgstr "Ausschreibung ansehen"
-
-#: classes/class.custom-post-type-biddings.php:66
-msgid "View Biddings"
-msgstr "Ausschreibungen ansehen"

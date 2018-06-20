@@ -8,7 +8,6 @@ class Custom_Post_Type_Biddings
 {
 
 
-
 	/**
 	 * Plugin constructor
 	 *
@@ -20,10 +19,10 @@ class Custom_Post_Type_Biddings
 	{
 
 		add_action( 'init', array( $this, 'register_post_type' ) );
+		add_action( 'init', array( $this, 'register_taxonomy' ) );
 		add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
 
 	} // END __construct
-
 
 
 	/**
@@ -40,7 +39,6 @@ class Custom_Post_Type_Biddings
 		load_plugin_textdomain( 'custom-post-type-biddings', false, dirname( plugin_basename( __FILE__ ) ) . '/../languages/'  );
 
 	} // END load_plugin_textdomain
-
 
 
 	/**
@@ -87,10 +85,10 @@ class Custom_Post_Type_Biddings
 			'show_ui' => TRUE,
 			'show_in_menu' => TRUE,
 			'query_var' => TRUE,
-			'rewrite' => [
+			'rewrite' => array(
 				'slug' => _x( 'bidding', 'Post Type Slug', 'custom-post-type-biddings' ),
 				'with_front' => FALSE,
-			],
+			),
 			'capability_type' => 'post',
 			'has_archive' => TRUE,
 			'hierarchical' => TRUE,
@@ -102,6 +100,51 @@ class Custom_Post_Type_Biddings
 	} // END register_post_type
 
 
-} // END class Custom_Post_Type_Biddings
+	/**
+	 * Register Post Type
+	 *
+	 * @access public
+	 * @return void
+	 * @author Ralf Hortt
+	 * @since 1.1
+	 */
+	public function register_taxonomy()
+	{
+
+		register_taxonomy( 'bidding-category', array( 'bidding' ), array(
+            'hierarchical' => TRUE,
+            'labels' => array(
+                'name' => _x( 'Bidding Categories', 'taxonomy general name', 'custom-post-type-biddings' ),
+                'singular_name' => _x( 'Bidding Category', 'taxonomy singular name', 'custom-post-type-biddings' ),
+                'search_items' =>  __( 'Search Bidding Categories', 'custom-post-type-biddings' ),
+                'popular_items' =>  __( 'Popular Bidding Categories', 'custom-post-type-biddings' ),
+                'all_items' => __( 'All Bidding Categories', 'custom-post-type-biddings' ),
+                'parent_item' => __( 'Parent Bidding Category', 'custom-post-type-biddings' ),
+                'parent_item_colon' => __( 'Parent Bidding Category:', 'custom-post-type-biddings' ),
+                'edit_item' => __( 'Edit Bidding Category', 'custom-post-type-biddings' ),
+                'view_item' => __( 'View Bidding Category', 'custom-post-type-biddings' ),
+                'update_item' => __( 'Update Bidding Category', 'custom-post-type-biddings' ),
+                'add_new_item' => __( 'Add New Bidding Category', 'custom-post-type-biddings' ),
+                'new_item_name' => __( 'New Bidding Category Name', 'custom-post-type-biddings' ),
+                'separate_items_with_commas' => __( 'Separate bidding categories with commas', 'custom-post-type-biddings' ),
+                'add_or_remove_items' => __( 'Add or remove bidding categories', 'custom-post-type-biddings' ),
+                'choose_from_most_used' => __( 'Choose from the most used bidding categories', 'custom-post-type-biddings' ),
+                'not_found' => __( 'No bidding categories found', 'custom-post-type-biddings' ),
+                'no_terms' => __( 'No bidding categories', 'custom-post-type-biddings' ),
+                'items_list_navigation' => __( 'Bidding Categories list navigation', 'custom-post-type-biddings' ),
+                'items_list' => __( 'Bidding Categories list', 'custom-post-type-biddings' ),
+            ),
+            'show_ui' => TRUE,	
+            'query_var' => TRUE,
+            'rewrite' => array(
+                'slug' => _x( 'bidding-category', 'Bidding Category Slug', 'custom-post-type-biddings' ),
+            ),
+            'show_admin_column' => TRUE,
+        ) );
+
+	} // END register_taxonomy
+
+
+} // END final class Custom_Post_Type_Biddings
 
 new Custom_Post_Type_Biddings;

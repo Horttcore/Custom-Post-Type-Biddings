@@ -29,6 +29,10 @@ A custom post type to manage biddings
 
 ## Changelog
 
+## v1.1
+
+* Add `bidding-category` taxonomy
+
 ### v1.0
 
 * Initial release

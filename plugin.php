@@ -3,7 +3,7 @@
  * Plugin Name: Custom Post Type Biddings
  * Plugin URI: https://horttcore.de
  * Description: Custom Post Type Biddings
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Ralf Hortt
  * Author URI: https://horttcore.de
  * Text Domain: custom-post-type-biddings
