@@ -1,0 +1,181 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Post Type Biddings\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-20 06:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: classes/class.custom-post-type-biddings.php:62
+msgid "Add New Bidding"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:71
+msgid "All Biddings"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:61
+msgctxt "Bidding"
+msgid "Add New"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:72
+msgid "Bidding Archives"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:73
+msgid "Bidding Attributes"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.admin.php:56
+msgid "Bidding draft updated."
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:81
+msgid "Bidding list navigation"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.admin.php:52
+msgid "Bidding published."
+msgstr ""
+
+#. %s: date and time of the revision
+#: classes/class.custom-post-type-biddings.admin.php:51
+#, php-format
+msgid "Bidding restored to revision from %s"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.admin.php:53
+msgid "Bidding saved."
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.admin.php:55
+#, php-format
+msgid "Bidding scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.admin.php:54
+msgid "Bidding submitted."
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.admin.php:46
+#: classes/class.custom-post-type-biddings.admin.php:49
+msgid "Bidding updated."
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:83
+msgid "Biddings"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:82
+msgid "Biddings list"
+msgstr ""
+
+#. Name of the plugin
+#. Description of the plugin
+msgid "Custom Post Type Biddings"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:63
+msgid "Edit Bidding"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:76
+msgid "Featured Image"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:80
+msgid "Filter bidding list"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://horttcore.de"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:74
+msgid "Insert into bidding"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.admin.php:55
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:64
+msgid "New Bidding"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:68
+msgid "No Biddings found"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:69
+msgid "No Biddings found in Trash"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:70
+msgid "Parent Bidding:"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:59
+msgctxt "post type general name"
+msgid "Biddings"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:60
+msgctxt "post type singular name"
+msgid "Bidding"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:91
+msgctxt "Post Type Slug"
+msgid "bidding"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.admin.php:70
+msgid "Preview bidding"
+msgstr ""
+
+#. Author of the plugin
+msgid "Ralf Hortt"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:78
+msgid "Remove featured image"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:67
+msgid "Search Biddings"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:77
+msgid "Set featured image"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:75
+msgid "Uploaded to this bidding"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:79
+msgid "Use as featured image"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:65
+msgid "View Bidding"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.admin.php:64
+msgid "View bidding"
+msgstr ""
+
+#: classes/class.custom-post-type-biddings.php:66
+msgid "View Biddings"
+msgstr ""
