@@ -13,3 +13,5 @@
 
 require( 'classes/class.custom-post-type-biddings.php' );
 require( 'classes/class.custom-post-type-biddings.admin.php' );
+require( 'classes/class.custom-post-type-biddings.shortcode.php' );
+require( 'classes/class.custom-post-type-biddings.widget.php' );

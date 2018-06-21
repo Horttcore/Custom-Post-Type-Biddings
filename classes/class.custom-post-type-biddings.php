@@ -18,9 +18,20 @@ class Custom_Post_Type_Biddings
 	public function __construct()
 	{
 
-		add_action( 'init', array( $this, 'register_post_type' ) );
-		add_action( 'init', array( $this, 'register_taxonomy' ) );
-		add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
+		add_action( 'custom-post-type-biddings-shortcode-output', 'Custom_Post_Type_Biddings_Shortcode::shortcode_output', 10, 3 );
+		add_action( 'custom-post-type-biddings-shortcode-before-loop', 'Custom_Post_Type_Biddings::loop_before', 10, 3 );
+		add_action( 'custom-post-type-biddings-shortcode-loop', 'Custom_Post_Type_Biddings::loop', 10, 3 );
+		add_action( 'custom-post-type-biddings-shortcode-after-loop', 'Custom_Post_Type_Biddings::loop_after', 10, 3 );
+
+		add_action( 'custom-post-type-biddings-widget-output', 'Custom_Post_Type_Biddings_Widget::widget_output', 10, 3 );
+		add_action( 'custom-post-type-biddings-widget-before-loop', 'Custom_Post_Type_Biddings::loop_before', 10, 3 );
+		add_action( 'custom-post-type-biddings-widget-loop', 'Custom_Post_Type_Biddings::loop', 10, 3 );
+		add_action( 'custom-post-type-biddings-widget-after-loop', 'Custom_Post_Type_Biddings::loop_after', 10, 3 );
+
+		add_action( 'init', [$this, 'register_post_type'] );
+		add_action( 'init', [$this, 'register_taxonomy'] );
+		add_action( 'widgets_init', [$this, 'register_widget'] );
+		add_action( 'plugins_loaded', [$this, 'load_plugin_textdomain'] );
 
 	} // END __construct
 
@@ -39,6 +50,65 @@ class Custom_Post_Type_Biddings
 		load_plugin_textdomain( 'custom-post-type-biddings', false, dirname( plugin_basename( __FILE__ ) ) . '/../languages/'  );
 
 	} // END load_plugin_textdomain
+
+
+	/**
+	 * Loop output
+	 *
+	 * @static
+	 * @access public
+	 * @return void
+	 * @since v1.2
+	 * @author Ralf Hortt <me@horttcore.de>
+	 */
+	static public function loop()
+	{
+
+		?>
+		<li>
+			<a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+		</li>
+		<?php
+
+	} // END loop
+
+
+	/**
+	 * After loop output
+	 *
+	 * @static
+	 * @access public
+	 * @return void
+	 * @since v1.2
+	 * @author Ralf Hortt <me@horttcore.de>
+	 */
+	static public function loop_after()
+	{
+
+		?>
+		</ul>
+		<?php
+
+	} // END loop_after
+
+
+	/**
+	 * After loop output
+	 *
+	 * @static
+	 * @access public
+	 * @return void
+	 * @since v1.2
+	 * @author Ralf Hortt <me@horttcore.de>
+ 	 */
+	static public function loop_before()
+	{
+
+		?>
+		<ul class="event-list">
+		<?php
+
+	} // END loop_before
 
 
 	/**
@@ -101,6 +171,21 @@ class Custom_Post_Type_Biddings
 
 
 	/**
+	 * Register shortcode
+	 *
+	 * @return void
+	 * @author Ralf Hortt
+	 * @since 1.2
+	 */
+	public function register_shortcode()
+	{
+
+		add_shortcode('biddings', ['Custom_Post_Type_Biddings', 'render']);
+
+	} // END register_shortcode
+
+
+	/**
 	 * Register Post Type
 	 *
 	 * @access public
@@ -143,6 +228,21 @@ class Custom_Post_Type_Biddings
         ) );
 
 	} // END register_taxonomy
+
+
+	/**
+	 * Register widget
+	 *
+	 * @return void
+	 * @author Ralf Hortt
+	 * @since 1.2
+	 */
+	public function register_widget()
+	{
+
+		register_widget( 'Custom_Post_Type_Biddings_Widget' );
+
+	} // END register_widget
 
 
 } // END final class Custom_Post_Type_Biddings
